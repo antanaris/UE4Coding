@@ -13,5 +13,9 @@ UCLASS()
 class UE4CODING_API AUE4CodingGameModeBase : public AGameModeBase
 {
 	GENERATED_BODY()
+
+public:
+
+	virtual void StartPlay() override;
 	
 };
