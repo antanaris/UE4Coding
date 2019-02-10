@@ -17,5 +17,10 @@ class UE4CODING_API AUE4CodingGameModeBase : public AGameModeBase
 public:
 
 	virtual void StartPlay() override;
-	
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "X") 
+	TSubclassOf<AActor> RandomNumberBPClass;
+
+	AUE4CodingGameModeBase();
+
 };
